@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"
 
 const HeroSection = () => {
   return (
@@ -19,6 +20,12 @@ const HeroSection = () => {
         </p>
         </div>
         <div className='col-span-5'></div>
+        <Image 
+        src='/images/profilepic.png'
+        alt='porfilepic'
+        width={400}
+        height={400}
+        />
       </div>
     </section>
   );
