@@ -18,8 +18,10 @@ const HeroSection = () => {
             visual experience. I make things that work and fulfill a need and
             function AND I can make it look good!
           </p>
-          <div className='px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'> Hire Me </div>
-          <div className='px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3'> Download Resume </div>
+          <div>
+          <button className='px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'> Hire Me </button>
+          <button className='px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3'> Download Resume </button>
+          </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0 flex justify-center">
         <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative justify-center">
