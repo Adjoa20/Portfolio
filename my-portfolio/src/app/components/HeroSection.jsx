@@ -15,21 +15,21 @@ const HeroSection = () => {
               Welcome,{" "}
             </span>
             My Name Is Agatha And I Am A {" "}
+            <br></br>
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 "Web Developer",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                5000, // wait 1s before replacing "Mice" with "Hamsters"
                 "Backend Developer",
-                1000,
+                5000,
                 "Backend DevOps",
-                1000,
+                5000,
                 "Full Stack Developer",
-                1000,
+                5000,
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
             />
           </h1>
