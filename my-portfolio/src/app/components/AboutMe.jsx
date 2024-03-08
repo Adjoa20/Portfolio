@@ -4,15 +4,57 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+    {
+        title: "Skills",
+        id: "skills",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Nodejs</li>
+                <li>jQuery</li>
+                <li>React</li>
+                <li>NextJS</li>
+                <li>Tailwind CSS</li>
+                <li>SQL</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>MongoDB</li>
+                <li>Express</li>
+            </ul>
+        )
+    },
+    {
+        title: "Education",
+        id: "education",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>General Assembly</li>
+                <li>New York City College of Technology</li>
+            </ul>
+        )
+    },
+    {
+        title: "Certifications",
+        id: "certifications",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Software Engineering Immersive</li>
+                <li>Google Professional Project Management</li>
+                <li>Product Management</li>
+            </ul>
+        )
+    },
+]
 
 const AboutMe = () => {
     const [tab, setTab] = useState("skills")
-    const [ isPending , startTransition ] = useTransition()
+    // const [ isPending , startTransition ] = useTransition()
 
     const handleTabChange = (id) => {
-        startTransition(() =>{
-            setTab(id)
-        })
+        // startTransition(() =>{
+        //     setTab(id)
+        // })
+        setTab(id)
     }
 
   return (
@@ -24,7 +66,7 @@ const AboutMe = () => {
           height={500}
           alt="About Me"
         />
-        <div>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Who Is Agatha?</h2>
           <p className="text-base md:text-lg">
             I am a Full Stack Developer driven by a passion for software
@@ -43,12 +85,12 @@ const AboutMe = () => {
             and I am excited about the endless possibilities in the world of
             software engineering.
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab==="skills"}>Skills</TabButton>
-            <span className="mr-3 font-semibold hover:text-white text-[#adb7be] border-b border-purple-500"> Skills </span>
-            <span> Experience </span>
-            <span> Education </span>
+            <TabButton selectTab={() => handleTabChange("education")} active={tab==="education"}>Education</TabButton>
+            <TabButton selectTab={() => handleTabChange("certifications")} active={tab==="certifications"}>Certifications</TabButton>
           </div>
+          <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>
       </div>
     </section>
