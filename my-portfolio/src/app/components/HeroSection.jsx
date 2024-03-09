@@ -13,14 +13,14 @@ const HeroSection = () => {
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-secondary-100">
               {" "}
-              Welcome,{" "}
+              Welcome!{" "}
             </span>
-            I'm Agatha And I Am A {" "}
+            I'm Agatha {" "}
             <br></br>
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Web Developer",
+                "I Am A Web Developer",
                 5000, // wait 1s before replacing "Web Developer" with "Backend Developer"
                 "Backend Developer",
                 5000,
