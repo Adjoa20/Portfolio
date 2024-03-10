@@ -15,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-12 lg:col-span-7 place-self-center text-center sm-text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+          <h1 className="text-black mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-secondary-100">
               {" "}
               Welcome!{" "}
@@ -37,7 +37,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#adb7be] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#060c10] text-base sm:text-lg mb-6 lg:text-xl">
             As a versatile Backend / Full Stack Developer who crafts and manages
             websites, excelling in project and product management; and with a knack
             for fixing and building anything, I'm passionate about transforming
@@ -45,13 +45,13 @@ const HeroSection = () => {
             My work not only functions flawlessly but also looks good!
           </p>
           <div className="lg:flex-row items-center lg:justify-start">
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black bg-gradient-to-r from-primary-400 to-secondary-300">
+            <a href="#contact" className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black bg-gradient-to-r from-primary-400 to-secondary-300">
               {" "}
               Hire Me{" "}
-            </button>
+            </a>
             <a
               href="https://docs.google.com/document/d/1AupQxkujAtb1Q-vfUuW2P2eoQ5HMPcTNTylZlBr5LHY/edit"
-              className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3 lg:mt-0"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-200 text-black border border-black mt-3 lg:mt-0"
             >
               {" "}
               View Resume{" "}
@@ -64,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-12 lg:col-span-5 place-self-center mt-4 lg:mt-0 flex justify-center"
         >
-          <div className="rounded-full bg-[#181818] bg-opacity-20 w-[150px] h-[150px] lg:w-[500px] lg:h-[550px] flex items-center justify-center">
+          <div className="rounded-full bg-[#181818] bg-opacity-10 w-[150px] h-[150px] lg:w-[500px] lg:h-[550px] flex items-center justify-center">
             <Image
               src="/images/profilepic.png"
               alt="profilepic"

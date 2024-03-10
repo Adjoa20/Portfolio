@@ -11,13 +11,14 @@ export const theme = {
     backgroundImage: {
       "landingbg":"url('/images/LandingPage.png')",
       "lpgbg":"url('/images/LPG.png')",
-      "greenbg":"url('/images/GreenPage.png')"
+      "greenbg":"url('/images/GreenPage.png')",
+      "neutralbg":"url('/images/Netural.png')",
     },
   },
   colors: {
     ...colors,
-    primary: colors.green,
-    secondary: colors.green,
+    primary: colors.red,
+    secondary: colors.red
   }
 };
 export const plugins = [];

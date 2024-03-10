@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useTransition, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
@@ -54,7 +54,7 @@ const AboutMe = () => {
   };
 
   return (
-    <section id="about" className="text-white">
+    <section id="about" className="text-black">
       <div className="md:flex md:justify-center md:items-center md:gap-8 md:py-8 md:px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="md:w-1/2">
     <Image
@@ -66,7 +66,7 @@ const AboutMe = () => {
     />
   </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full md:w-1/2">
-          <h2 className="text-4xl font-bold text-white mb-4">Who Is Agatha?</h2>
+          <h2 className="text-4xl font-bold text-black mb-4">Who Is Agatha?</h2>
           <p className="text-base md:text-lg">
             As a Full Stack Developer, I am deeply passionate about the
             transformative power of software engineering, turning raw data into
