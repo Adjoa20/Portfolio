@@ -9,10 +9,16 @@ const ProjectCard = ({ imageURL, title, description, gitUrl, previewUrl }) => {
       className="h-52 md:h-72 rounded-t-xl relative group" 
       style={{ background: `url(${imageURL})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
         <div className="overlay items-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
-            <Link href={gitUrl} className="h-14 w-14 ml-48 border-2 relative rounded-full border-[#adb7be] hover:border-white group/link flex justify-center items-center">
+            <Link
+              href={gitUrl}
+              className="h-14 w-14 border-2 ml-48 relative rounded-full border-[#adb7be] hover:border-white group/link flex justify-center items-center group"
+              >
                 <CodeBracketIcon className="h-10 w-10 text-[#adb7be] cursor-pointer group-hover/link:text-white"/>
             </Link>
-            <Link href={previewUrl} className="h-14 w-14 border-2 relative rounded-full border-[#adb7be] hover:border-white group/link flex justify-center items-center">
+            <Link
+              href={previewUrl}
+              className="h-14 w-14 border-2 relative rounded-full border-[#adb7be] hover:border-white group/link flex justify-center items-center"
+              >
                 <EyeIcon className="h-10 w-10 text-[#adb7be] cursor-pointer group-hover/link:text-white"/>
             </Link>
         </div>

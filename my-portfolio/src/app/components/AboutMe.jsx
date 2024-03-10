@@ -48,17 +48,13 @@ const TAB_DATA = [
 
 const AboutMe = () => {
   const [tab, setTab] = useState("skills");
-  // const [ isPending , startTransition ] = useTransition()
 
   const handleTabChange = (id) => {
-    // startTransition(() =>{
-    //     setTab(id)
-    // })
     setTab(id);
   };
 
   return (
-    <section className="text-white">
+    <section id="about" className="text-white">
       <div className="md:flex md:justify-center md:items-center md:gap-8 md:py-8 md:px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="md:w-1/2">
     <Image
