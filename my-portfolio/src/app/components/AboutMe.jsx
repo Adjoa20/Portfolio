@@ -66,7 +66,7 @@ const AboutMe = () => {
       width={500}
       height={500}
       alt="About Me"
-      className="md:mr-8"
+      className="md:mr-8 items-center"
     />
   </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full md:w-1/2">
