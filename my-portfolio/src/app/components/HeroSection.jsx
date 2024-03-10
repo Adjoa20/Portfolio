@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="col-span-12 lg:col-span-7 place-self-center text-center sm-text-left justify-self-start"
         >
           <h1 className="text-black mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-200 to-secondary-100">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-700 to-secondary-300">
               {" "}
               Welcome!{" "}
             </span>
