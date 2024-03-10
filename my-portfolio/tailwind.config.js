@@ -9,14 +9,15 @@ export const content = [
 export const theme = {
   extend: {
     backgroundImage: {
-      "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      "landingbg":"url('/images/LandingPage.png')",
+      "lpgbg":"url('/images/LPG.png')",
+      "greenbg":"url('/images/GreenPage.png')"
     },
   },
   colors: {
     ...colors,
-    primary: colors.red,
-    secondary: colors.pink,
+    primary: colors.green,
+    secondary: colors.green,
   }
 };
 export const plugins = [];
