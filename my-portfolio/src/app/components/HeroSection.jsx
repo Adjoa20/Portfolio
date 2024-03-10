@@ -20,10 +20,10 @@ const HeroSection = () => {
               {" "}
               Welcome!{" "}
             </span>
-            I'm Agatha <br></br>
+            I am Agatha <br></br>
             <TypeAnimation
               sequence={[
-                "I Am A Web Developer",
+                "And I Am A Web Developer",
                 5000,
                 "Backend Developer",
                 5000,
@@ -40,7 +40,7 @@ const HeroSection = () => {
           <p className="text-[#060c10] text-base sm:text-lg mb-6 lg:text-xl">
             As a versatile Backend / Full Stack Developer who crafts and manages
             websites, excelling in project and product management; and with a knack
-            for fixing and building anything, I'm passionate about transforming
+            for fixing and building anything, I am passionate about transforming
             raw data into valuable insights with an enjoyable visual experience.
             My work not only functions flawlessly but also looks good!
           </p>
