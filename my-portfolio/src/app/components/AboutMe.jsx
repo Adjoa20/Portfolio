@@ -58,7 +58,7 @@ const AboutMe = () => {
       <div className="md:flex md:justify-center md:items-center md:gap-8 md:py-8 md:px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="md:w-1/2">
     <Image
-      src="/images/image2.png"
+      src="/images/image5.png"
       width={500}
       height={500}
       alt="About Me"
