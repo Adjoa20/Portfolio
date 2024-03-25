@@ -13,7 +13,7 @@ const projectsData = [
     image: "/images/projects/Saint.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Adjoa20/SaintsCove",
-    previewUrl: "https://saintscove-v3ed.onrender.com",
+    previewUrl: "https://saintscove-1-pwsf.onrender.com/",
   },
   {
     id: "2",
@@ -32,7 +32,7 @@ const projectsData = [
     image: "/images/projects/Hangman.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Adjoa20/Project-1-Hangman",
-    previewUrl: "https://adjoa20.github.io/Project-1-Hangman",
+    previewUrl: "https://adjoa20.github.io/Project-1-Hangman/",
   },
 ];
 
