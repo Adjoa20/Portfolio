@@ -51,7 +51,8 @@ const NavBar = () => {
             <li key={index}>
               <NavLink path={link.path} title={link.title}/>
             </li>
-          ))}
+          ))
+          }
         </ul>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null }
