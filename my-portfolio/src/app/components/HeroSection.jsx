@@ -23,11 +23,11 @@ const HeroSection = () => {
             I am Agatha <br></br>
             <TypeAnimation
               sequence={[
-                "Web Developer",
-                5000,
                 "Backend Developer",
                 5000,
-                "Backend DevOps",
+                "Technical Project Manager",
+                5000,
+                "Technical Program Manager",
                 5000,
                 "Full Stack Developer",
                 5000,
@@ -39,10 +39,13 @@ const HeroSection = () => {
           </h1>
           <p className="text-[#060c10] text-base sm:text-lg mb-6 lg:text-xl">
             As a versatile Backend / Full Stack Developer, I craft and manage
-            websites, excelling in project and product management. With a knack
+            websites, excelling in Project and Product Management. With a knack
             for fixing and building anything, I am passionate about transforming
-            raw data into valuable insights with an enjoyable visual experience.
-            My work not only functions flawlessly but also looks good!
+            raw data into valuable insights and skilled in mmodifying raw code into functional
+            solutions, enhancing communication between front-end teams and
+            engineers, and ensuring alignment with company goals for successful
+            sprint deployments. My work not only functions flawlessly but also
+            looks good!
           </p>
           <div className="lg:flex-row items-center lg:justify-start">
             <a

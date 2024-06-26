@@ -6,20 +6,72 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
+    title: "Libraries & Framework",
+    id: "libraries",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>jQuery</li>
+        <li>Nodejs</li>
+        <li>Django</li>
+        <li>NextJS</li>
+        <li>Tailwind CSS</li>
+        <li>Sanity V3</li>
+        <li>React</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Languages",
+    id: "languages",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>TypeScript</li>
+      </ul>
+    ),
+  },
+  {
     title: "Skills",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Nodejs</li>
-        <li>jQuery</li>
-        <li>React</li>
-        <li>NextJS</li>
-        <li>Tailwind CSS</li>
-        <li>SQL</li>
-        <li>Javascript</li>
-        <li>Python</li>
+        <li>Software Solution Development</li>
+        <li>Project Management</li>
+        <li>Stakeholder Management</li>
+        <li>Team Collaboration</li>
+        <li>Site Architecture & Infrastructure</li>
+        <li>TypeScript</li>
+        <li>TypeScript</li>
+        <li>TypeScript</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Project Management",
+    id: "management",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Agile & Waterfall Methodologies</li>
+        <li>Product Road Map</li>
+        <li>Sprint Planning</li>
+        <li> Scrum</li>
+        <li>Project Planning</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Databases and Other Tools",
+    id: "databases",
+    content: (
+      <ul className="list-disc pl-2">
         <li>MongoDB</li>
-        <li>Express</li>
+        <li>SQL</li>
+        <li>Tableau</li>
+        <li>Alteryx</li>
+        <li>Microsoft Power BI</li>
+        <li>Trello</li>
+        <li>Monday.com</li>
       </ul>
     ),
   },
@@ -47,7 +99,7 @@ const TAB_DATA = [
 ];
 
 const AboutMe = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("libraries");
 
   const handleTabChange = (id) => {
     setTab(id);
@@ -85,10 +137,22 @@ const AboutMe = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("libraries")}
+              active={tab === "libraries"}
             >
-              Skills
+              Libraries and Framework
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("languages")}
+              active={tab === "languages"}
+            >
+              Languages
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("management")}
+              active={tab === "management"}
+            >
+              Project Management 
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
