@@ -41,9 +41,9 @@ const TAB_DATA = [
         <li>Stakeholder Management</li>
         <li>Team Collaboration</li>
         <li>Site Architecture & Infrastructure</li>
-        <li>TypeScript</li>
-        <li>TypeScript</li>
-        <li>TypeScript</li>
+        <li>User Testing & Usability</li>
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
       </ul>
     ),
   },
@@ -55,8 +55,9 @@ const TAB_DATA = [
         <li>Agile & Waterfall Methodologies</li>
         <li>Product Road Map</li>
         <li>Sprint Planning</li>
-        <li> Scrum</li>
+        <li>Scrum</li>
         <li>Project Planning</li>
+        <li>Gantt Chart</li>
       </ul>
     ),
   },
@@ -127,7 +128,7 @@ const AboutMe = () => {
             skills in time management, organization, independence, and teamwork.
             With a background in hospitality management spanning over 8 years, I
             take pride in my ability to lead projects that drive innovation,
-            resulting in my promotion to a management role. Looking ahead, my
+            resulting in my promotion to a Project Management role. Looking ahead, my
             goal for the next 5 years is to establish an after-school program
             for kids of color, teaching them coding skills, and to contribute to
             the growth of the tech industry in Ghana. I find great joy in
@@ -147,6 +148,12 @@ const AboutMe = () => {
               active={tab === "languages"}
             >
               Languages
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+             Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("management")}
