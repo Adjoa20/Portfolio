@@ -34,6 +34,16 @@ const projectsData = [
     gitUrl: "https://github.com/Adjoa20/Project-1-Hangman",
     previewUrl: "https://adjoa20.github.io/Project-1-Hangman/",
   },
+  {
+    id: "4",
+    title: "ACSWebsite",
+    description:
+      "This site delves into the school’s mission to foster academic excellence, its rich history, enrollment details, and various programs offered.",
+    image: "/images/projects/ACS.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Adjoa20/ACSWebsite",
+    previewUrl: "https://acs-website-iota.vercel.app/",
+  },
 ];
 
 const ProjectSection = () => {
