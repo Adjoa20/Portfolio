@@ -41,7 +41,7 @@ const HeroSection = () => {
             As a versatile Backend / Full Stack Developer, I craft and manage
             websites, excelling in Project and Product Management. With a knack
             for fixing and building anything, I am passionate about transforming
-            raw data into valuable insights and skilled in mmodifying raw code into functional
+            raw data into valuable insights and skilled in modifying raw code into functional
             solutions, enhancing communication between front-end teams and
             engineers, and ensuring alignment with company goals for successful
             sprint deployments. My work not only functions flawlessly but also
